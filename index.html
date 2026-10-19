@@ -64,6 +64,10 @@ h1.q{font-family:Montserrat;font-weight:800;font-size:27px;line-height:1.2;margi
 .hlg{color:var(--green);font-weight:800}
 .hlr{color:var(--red);font-weight:800}
 .hero-img{width:100%;border-radius:16px;margin-top:16px;display:block;border:1px solid var(--line)}
+.ugc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.ugc figure{margin:0}
+.ugc img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;border:1px solid var(--line)}
+.ugc figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:5px;font-weight:600}
 .note{color:#45533a;font-size:14px;margin-top:14px;background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .opts{margin-top:20px;display:flex;flex-direction:column;gap:10px}
 .opt{display:flex;align-items:center;gap:12px;background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:15px 16px;font-size:15.5px;font-weight:600;cursor:pointer;transition:.15s;text-align:left;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
@@ -383,6 +387,21 @@ function render(){
     /* put to the test */
     html+='<div class="center" style="margin-top:22px"><div class="eyebrow">Fits real life</div><h1 class="q" style="font-size:22px;margin-top:4px">Put to the test</h1></div>';
     html+='<img class="hero-img" loading="lazy" src="puttotest.webp" alt="Crave Off fits your daily routine" onerror="this.style.display=\'none\'">';
+    /* UGC selfies */
+    html+='<div class="center" style="margin-top:24px"><div class="eyebrow">Real people · real kitchens · no studio</div><h1 class="q" style="font-size:22px;margin-top:4px">Part of their daily routine</h1></div>';
+    html+='<div class="ugc">'+
+      '<figure><img loading="lazy" src="ugc1.webp" alt="Real customer with Crave Off" onerror="this.parentNode.style.display=\'none\'"><figcaption>“My new daily habit.”</figcaption></figure>'+
+      '<figure><img loading="lazy" src="ugc2.webp" alt="Real customer with Crave Off" onerror="this.parentNode.style.display=\'none\'"><figcaption>“Feel more in control.”</figcaption></figure>'+
+      '<figure><img loading="lazy" src="ugc3.webp" alt="Real customer with Crave Off" onerror="this.parentNode.style.display=\'none\'"><figcaption>“Easy to take, no jitters.”</figcaption></figure>'+
+      '<figure><img loading="lazy" src="ugc4.webp" alt="Real customer with Crave Off" onerror="this.parentNode.style.display=\'none\'"><figcaption>“Part of my morning now.”</figcaption></figure>'+
+      '</div>';
+    /* before/after journeys */
+    html+='<div class="center" style="margin-top:24px"><div class="eyebrow">Real people · real journeys</div><h1 class="q" style="font-size:22px;margin-top:4px">On their wellness journey</h1></div>';
+    html+='<img class="hero-img" loading="lazy" src="ba1.webp" alt="A customer’s wellness journey" onerror="this.style.display=\'none\'">';
+    html+='<img class="hero-img" loading="lazy" src="ba2.webp" alt="A customer’s wellness journey" onerror="this.style.display=\'none\'" style="margin-top:10px">';
+    html+='<img class="hero-img" loading="lazy" src="ba3.webp" alt="A customer’s wellness journey" onerror="this.style.display=\'none\'" style="margin-top:10px">';
+    html+='<img class="hero-img" loading="lazy" src="ba4.webp" alt="A customer’s wellness journey" onerror="this.style.display=\'none\'" style="margin-top:10px">';
+    html+='<p class="sub center" style="margin-top:8px;color:var(--muted);font-size:12px">Individual results are not typical and vary from person to person. Crave Off is a dietary supplement — not a weight-loss drug — and works best alongside healthy eating and regular activity. These statements have not been evaluated by the FDA.</p>';
     /* reviews */
     html+='<div class="center" style="margin-top:24px"><div class="eyebrow">★★★★★ Real buyers · verified</div><h1 class="q" style="font-size:22px;margin-top:4px">What people are saying</h1></div>';
     html+=rvw("J","Jessica","The 3pm snack attack is finally manageable.","I used to raid the pantry every afternoon. A couple weeks on Crave Off and I just don’t feel pulled to it the same way. I feel way more in control of my choices.");
