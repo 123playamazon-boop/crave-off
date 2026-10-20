@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off dtc v6 — tried-everything incl injections (compliant) -->
+<!-- crave-off dtc v7 - before/after in first fold -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -43,6 +43,11 @@ h1.q{font-family:Montserrat;font-weight:800;font-size:27px;line-height:1.2;margi
 .hlg{color:var(--green);font-weight:800}
 .hlr{color:var(--red);font-weight:800}
 .hero-img{width:100%;border-radius:16px;margin-top:16px;display:block;border:1px solid var(--line)}
+.bastrip{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.bastrip figure{margin:0}
+.bastrip img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+.bastrip .bf{display:flex;justify-content:space-between;font-size:10px;font-weight:800;letter-spacing:.3px;color:var(--muted);margin-top:4px;padding:0 4px}
+.bacap{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;font-weight:600;line-height:1.4}
 .ugc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
 .ugc figure{margin:0}
 .ugc img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;border:1px solid var(--line)}
@@ -190,6 +195,8 @@ var h="";
 /* ---- HERO: Amanda landing sentence + Hormozi dream-outcome H1 ---- */
 h+='<div class="eyebrow center">It’s Brazilian · The 60-Second Amazon Craving Ritual™</div>';
 h+='<h1 class="q center" style="margin-top:6px">Every diet works — until the <span class="hlr">3pm cravings</span> sabotage it. <span class="hlg">Win the cravings, and the diet finally sticks.</span></h1>';
+h+='<div class="bastrip"><figure><img src="ba1.webp" alt="Real customer — craving-control journey" onerror="this.parentNode.style.display=\'none\'"><div class="bf"><span>BEFORE</span><span>AFTER</span></div></figure><figure><img src="ba3.webp" alt="Real customer — craving-control journey" onerror="this.parentNode.style.display=\'none\'"><div class="bf"><span>BEFORE</span><span>AFTER</span></div></figure></div>';
+h+='<p class="bacap">Real women on their craving-control journey. Results vary — Crave Off supports craving control &amp; a balanced appetite;* it is not a weight-loss drug.</p>';
 h+='<img class="hero-img" src="hero.webp" alt="It’s Brazilian Crave Off — Amazonian açaí craving-control blend" onerror="this.style.display=\'none\'">';
 h+='<p class="lede center">You’ve tried <b>everything</b> to lose the weight — the crazy crash diets, the detox teas, the “tricks,” even the <b>injections</b> — and the second you stop, the cravings come roaring back <b>louder than ever</b>. Here’s what no diet program or clinic will tell you: <b>it’s not willpower — it’s biology.</b> The one thing that sabotages your weight loss isn’t the food on your plan — it’s the <b>craving you can’t out-willpower</b>, which is exactly why most diets fall apart by week 3. Whole <b>Amazon river communities</b> stay naturally satisfied on <b>açaí</b> — one of the most <b>filling foods on earth</b> (fiber + good fats, not the sugary $14 bowl). <b>Crave Off</b> builds it into a <b>60-second daily ritual</b> — <b>no needles, no crash, no weird stimulants</b> — with Green Tea, Garcinia &amp; Gymnema, made to <b>support craving control and a balanced appetite,*</b> so the diet you’re <i>already doing</i> to lose weight finally has a shot at sticking.</p>';
 h+='<div class="authbar"><span>🚚 FREE SHIPPING</span><span>🇺🇸 MADE IN USA</span><span>🏭 GMP FACILITY</span><span>↩️ 60-DAY GUARANTEE</span></div>';

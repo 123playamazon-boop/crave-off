@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off quiz v6 - tried-everything incl injections -->
+<!-- crave-off quiz v7 - before/after in first fold -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -65,6 +65,11 @@ h1.q{font-family:Montserrat;font-weight:800;font-size:27px;line-height:1.2;margi
 .hlg{color:var(--green);font-weight:800}
 .hlr{color:var(--red);font-weight:800}
 .hero-img{width:100%;border-radius:16px;margin-top:16px;display:block;border:1px solid var(--line)}
+.bastrip{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.bastrip figure{margin:0}
+.bastrip img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+.bastrip .bf{display:flex;justify-content:space-between;font-size:10px;font-weight:800;letter-spacing:.3px;color:var(--muted);margin-top:4px;padding:0 4px}
+.bacap{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;font-weight:600;line-height:1.4}
 .ugc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
 .ugc figure{margin:0}
 .ugc img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;border:1px solid var(--line)}
@@ -298,6 +303,8 @@ function render(){
   if(s.k==="intro"){
     html+='<div class="eyebrow center">'+s.eyebrow+'</div>';
     html+='<h1 class="q center" style="margin-top:6px">'+p(s.h)+'</h1>';
+    html+='<div class="bastrip"><figure><img src="ba1.webp" alt="Real customer — craving-control journey" onerror="this.parentNode.style.display=\'none\'"><div class="bf"><span>BEFORE</span><span>AFTER</span></div></figure><figure><img src="ba3.webp" alt="Real customer — craving-control journey" onerror="this.parentNode.style.display=\'none\'"><div class="bf"><span>BEFORE</span><span>AFTER</span></div></figure></div>';
+    html+='<p class="bacap">Real women on their craving-control journey. Results vary — Crave Off supports craving control &amp; a balanced appetite;* it is not a weight-loss drug.</p>';
     html+='<img class="hero-img" src="'+s.img+'" alt="It’s Brazilian Crave Off — craving control botanical blend" onerror="this.style.display=\'none\'">';
     html+='<p class="lede center">'+p(s.lede)+'</p>';
     html+='<div class="note">'+p(s.note)+'</div>';
