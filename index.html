@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off quiz v13 - fake-exposé cards -->
+<!-- crave-off quiz v14 - default kit 1 bottle -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -485,8 +485,8 @@ function render(){
     var p6=(parseFloat(PRICE)*6*(1-K6_OFF)), p6s=p6.toFixed(2), p6per=(p6/6).toFixed(2), p6save=(parseFloat(PRICE)*6-p6).toFixed(2);
     html+='<div class="center" style="margin-top:18px"><div class="eyebrow">Choose your supply</div><h1 class="q" style="font-size:20px;margin-top:2px">How many, '+(name||"")+'?</h1></div>';
     html+='<div class="kitsel">'+
-      '<div class="kitopt" data-kit="1"><div class="kt">1 Bottle</div><div class="kp">$'+PRICE+'</div><div class="ks">1-month<br>starter</div></div>'+
-      '<div class="kitopt sel" data-kit="3"><div class="ktag">MOST POPULAR</div><div class="kt">3 Bottles</div><div class="kp">$'+p3s+'</div><div class="ks">$'+p3per+'/ea · save $'+p3save+'<br>3-month plan</div></div>'+
+      '<div class="kitopt sel" data-kit="1"><div class="kt">1 Bottle</div><div class="kp">$'+PRICE+'</div><div class="ks">1-month<br>starter</div></div>'+
+      '<div class="kitopt" data-kit="3"><div class="ktag">MOST POPULAR</div><div class="kt">3 Bottles</div><div class="kp">$'+p3s+'</div><div class="ks">$'+p3per+'/ea · save $'+p3save+'<br>3-month plan</div></div>'+
       '<div class="kitopt best" data-kit="6"><div class="ktag">BEST VALUE</div><div class="kt">6 Bottles</div><div class="kp">$'+p6s+'</div><div class="ks">$'+p6per+'/ea · save $'+p6save+'<br>6-month plan</div></div>'+
       '</div>';
     html+='<p class="sub center" style="margin-top:8px">Most people choose 3 or 6 bottles — cravings are daily, and the per-bottle price drops a lot.</p>';
@@ -525,7 +525,7 @@ function render(){
     showCTA("Get Crave Off →","🔒 Secure checkout · free US shipping",true);
     cnote.innerHTML="🔒 Secure checkout · free US shipping";
     var u=document.createElement('div'); u.className='urg'; u.textContent='⏳ Launch pricing — this round only. It goes back up after.'; cnote.parentNode.insertBefore(u,cnote.nextSibling);
-    window.__kit=3;
+    window.__kit=1;
     function kitInfo(){ if(window.__kit===6) return {qty:6,code:K6_CODE,off:K6_OFF}; if(window.__kit===3) return {qty:3,code:K3_CODE,off:K3_OFF}; return {qty:1,code:'',off:0}; }
     function kitPrice(){ var k=kitInfo(); return parseFloat(PRICE)*k.qty*(1-k.off); }
     function syncCTA(){ var k=kitInfo(); ctaBtn.textContent=(k.qty===1?"Get 1 bottle for $"+PRICE:"Get "+k.qty+" bottles for $"+kitPrice().toFixed(2))+" →"; }
