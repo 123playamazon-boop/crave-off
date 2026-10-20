@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off quiz v12 - scam-first hero + full unmask up top + playbook + why-real -->
+<!-- crave-off quiz v13 - fake-exposé cards -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -79,6 +79,13 @@ h1.q{font-family:Montserrat;font-weight:800;font-size:27px;line-height:1.2;margi
 .scamwin p{font-size:13px;color:#2f5120;margin-top:3px}
 .scamdoc{width:100%;max-width:300px;border-radius:16px;display:block;margin:14px auto 0;border:3px solid #d62828}
 .scamdoc-cap{text-align:center;font-size:13px;font-weight:800;color:#d62828;margin:8px auto 0;max-width:340px;line-height:1.4}
+.fakewrap{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.fakecard{position:relative;background:#141414;border-radius:12px;overflow:hidden;border:2px solid #d62828;aspect-ratio:16/11}
+.fakecard .ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:58px;opacity:.28}
+.fakecard .wm{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:rotate(-18deg);font-family:Montserrat,sans-serif;font-weight:900;font-size:clamp(26px,9vw,38px);letter-spacing:4px;color:rgba(255,255,255,.13)}
+.fakecard .stamp{position:absolute;top:8px;right:8px;background:#d62828;color:#fff;font-weight:900;font-size:10px;padding:4px 7px;border-radius:5px;transform:rotate(-6deg);border:2px solid #fff;letter-spacing:.5px}
+.fakecard .ttl{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.88));color:#fff;font-size:11px;font-weight:700;padding:20px 8px 8px;line-height:1.25}
+.fakecap{text-align:center;font-size:12.5px;color:var(--muted);margin:10px auto 0;max-width:360px;line-height:1.45;font-weight:600}
 .bacap{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;font-weight:600;line-height:1.4}
 .ugc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
 .ugc figure{margin:0}
@@ -326,6 +333,11 @@ function render(){
     '<div class="scamrow"><b>3 · No real evidence</b><p>“Studies” and “investigators” that don’t exist, and claims no one can check.</p></div>'+
     '<div class="scamrow"><b>4 · The bait-and-switch</b><p>The “recipe” is just bait — at the end they push some random no-name supplement.</p></div>'+
     '</div>';
+    html+='<div class="fakewrap">'+
+    '<div class="fakecard"><div class="wm">SCAM</div><div class="ghost">👤</div><div class="stamp">FAKE</div><div class="ttl">“Pink-salt trick” for weight loss — I checked…</div></div>'+
+    '<div class="fakecard"><div class="wm">FAKE</div><div class="ghost">👤</div><div class="stamp">FAKE INTERVIEW</div><div class="ttl">“Doctor-approved” miracle drops — exposed</div></div>'+
+    '</div>';
+    html+='<div class="fakecap">Fakes like these flood your feed every day — cloned faces, fake interviews, “recipes” that go nowhere. Crave Off is the opposite.</div>';
     html+='<div class="center" style="margin-top:24px"><div class="eyebrow">Why Crave Off is different</div><h1 class="q" style="font-size:21px;margin-top:4px">No tricks. A real brand you can check.</h1></div>';
     html+='<div class="scambox">'+
     '<div class="scamwin"><b>✓ A real brand, out in the open</b><p>It’s Brazilian — a named brand with a real company and a real checkout. No fake news page, no cloned celebrities.</p></div>'+
