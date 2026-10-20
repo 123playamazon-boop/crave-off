@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off dtc v3 — açaí hero angle (Hormozi) -->
+<!-- crave-off dtc v4 — aggressive: willpower villain + comparison + anchor -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -191,7 +191,7 @@ var h="";
 h+='<div class="eyebrow center">It’s Brazilian · The 60-Second Amazon Craving Ritual™</div>';
 h+='<h1 class="q center" style="margin-top:6px">The <span class="hlg">Amazonian berry</span> that helps you <span class="hlg">feel full</span> — so <span class="hlr">cravings lose their grip</span>.</h1>';
 h+='<img class="hero-img" src="hero.webp" alt="It’s Brazilian Crave Off — Amazonian açaí craving-control blend" onerror="this.style.display=\'none\'">';
-h+='<p class="lede center">Americans know açaí as a <b>$14 sugary smoothie bowl</b>. In the Amazon it’s eaten <b>pure</b> — one of the most <b>satisfying foods on earth</b>, which is why whole river communities stay naturally satisfied on it. We kept the part that matters (the fruit, not the sugar) and built it into a <b>60-second daily ritual</b> — with a botanical support crew of Green Tea, Garcinia &amp; Gymnema — made to <b>support craving control, a balanced appetite and natural energy*</b>, so the healthier choice finally feels easier, not harder.</p>';
+h+='<p class="lede center">You’ve white-knuckled your way through every diet this year — and that <b>3pm snack attack</b> still wins by dinner. Here’s what no diet program will tell you: <b>it’s not willpower — it’s biology.</b> Your body’s craving signals are louder than your good intentions, and fighting them alone all day is exhausting. The diet industry keeps selling you willpower because a bottle that admits it’s <i>not your fault</i> doesn’t sell $300 programs. Meanwhile, whole <b>Amazon river communities</b> stay naturally satisfied on <b>açaí</b> — one of the most <b>filling foods on earth</b> (fiber + good fats, not the sugary $14 bowl). <b>Crave Off</b> keeps the part that matters and builds it into a <b>60-second daily ritual</b> — with Green Tea, Garcinia &amp; Gymnema — made to <b>support craving control, a balanced appetite and natural energy*</b>, so the healthier choice finally feels easier, not harder.</p>';
 h+='<div class="authbar"><span>🚚 FREE SHIPPING</span><span>🇺🇸 MADE IN USA</span><span>🏭 GMP FACILITY</span><span>↩️ 60-DAY GUARANTEE</span></div>';
 h+='<button class="inlinecta" data-buy="1">Get Crave Off → from $'+PRICE+'</button>';
 h+='<div class="cnote">🔒 Secure checkout · free US shipping · 60-day money-back guarantee</div>';
@@ -208,7 +208,16 @@ h+='<div class="tiles">'+
   '</div>';
 
 /* ---- offer line ---- */
-h+='<div class="offerline" style="margin-top:24px"><div class="eyebrow" style="margin-bottom:6px">The 60-Second Amazon Craving Ritual™</div><div class="ol-top"><b>It’s Brazilian Crave Off</b> (60 capsules · 30 servings) + <b>$'+BONUSES+' in bonus guides</b> starting at just</div><div class="ol-price">$'+PRICE+'</div><div class="ol-sub" style="color:var(--green);font-size:14px">Shipped free — buy more &amp; save up to <b>34%</b> per bottle.</div><div class="ol-sub">One-time · free US shipping · 60-day money-back guarantee</div></div>';
+/* ---- aggressive comparison: what hasn't worked vs the ritual ---- */
+h+='<div class="center" style="margin-top:26px"><div class="eyebrow">Why nothing else stuck</div><h1 class="q" style="font-size:22px;margin-top:4px">It was never your willpower</h1></div>';
+h+='<div style="margin-top:14px;display:flex;flex-direction:column;gap:8px">'+
+ '<div style="background:#fff;border:1px solid #e3efd4;border-radius:12px;padding:12px 14px"><b style="color:#d62828;font-size:14.5px">✗ $12 drugstore “appetite” gummies</b><p style="font-size:13px;color:#45533a;margin-top:3px">A sugary buzz for an hour, then the crash — and the cravings come back louder than before.</p></div>'+
+ '<div style="background:#fff;border:1px solid #e3efd4;border-radius:12px;padding:12px 14px"><b style="color:#d62828;font-size:14.5px">✗ $300/mo diet programs &amp; coaching</b><p style="font-size:13px;color:#45533a;margin-top:3px">Rules you can’t keep past week 3 — and the 3pm pull doesn’t care about your meal plan.</p></div>'+
+ '<div style="background:#fff;border:1px solid #e3efd4;border-radius:12px;padding:12px 14px"><b style="color:#d62828;font-size:14.5px">✗ White-knuckle willpower</b><p style="font-size:13px;color:#45533a;margin-top:3px">Holds till you’re tired, stressed, or it’s 10pm. Then biology wins — every time.</p></div>'+
+ '<div style="background:#f3f9ea;border:2px solid #cfe6bd;border-radius:12px;padding:12px 14px"><b style="color:#157347;font-size:14.5px">✓ The 60-Second Amazon Craving Ritual</b><p style="font-size:13px;color:#2f5120;margin-top:3px">An açaí-led daily botanical that <b>supports craving control, a balanced appetite and natural energy*</b> — so the healthier choice finally feels easier, not like a fight.</p></div>'+
+ '</div>';
+h+='<div style="margin-top:24px;text-align:center;background:#1e2a16;color:#fff;border-radius:16px;padding:18px 16px"><div style="font-size:13px;font-weight:800;letter-spacing:.5px;color:#cfe6a6;text-transform:uppercase">Do the math</div><div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.35">Diet coaching &amp; programs: <span style="color:#ff8a4a">$1,200+/yr</span> — and most quit by month 2.<br>Crave Off: <b style="color:#9fe36a">$'+PRICE+' once</b>, a 60-second daily habit.</div><div style="font-size:13px;color:#cdd9bf;margin-top:8px;font-weight:600">A fraction of one month of coaching — for the whole routine.</div></div>';
+h+='<div class="offerline" style="margin-top:16px"><div class="eyebrow" style="margin-bottom:6px">The 60-Second Amazon Craving Ritual™</div><div class="ol-top"><b>It’s Brazilian Crave Off</b> (60 capsules · 30 servings) + <b>$'+BONUSES+' in bonus guides</b> starting at just</div><div class="ol-price">$'+PRICE+'</div><div class="ol-sub" style="color:var(--green);font-size:14px">Shipped free — buy more &amp; save up to <b>34%</b> per bottle.</div><div class="ol-sub">One-time · free US shipping · 60-day money-back guarantee</div></div>';
 h+='<img class="hero-img" loading="lazy" src="bottle.webp" alt="It’s Brazilian Crave Off bottle with botanicals" onerror="this.style.display=\'none\'">';
 
 /* ---- why it works / ingredients ---- */
