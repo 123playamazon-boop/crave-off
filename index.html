@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off quiz v11 - +celebrity-deepfake scam row -->
+<!-- crave-off quiz v12 - scam-first hero + full unmask up top + playbook + why-real -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -234,8 +234,8 @@ var K6_CODE="CRAVE6", K6_OFF=0.34;   // 6 bottles, 34% off
 
 /* ================= QUIZ DATA ================= */
 var STEPS = [
- {k:"intro",eyebrow:"It’s Brazilian · The 60-Second Amazon Craving Ritual™",
-  h:'Every diet works — until the <span class="hlr">3pm cravings</span> sabotage it. <span class="hlg">Win the cravings, and the diet finally sticks.</span>',
+ {k:"intro",eyebrow:"It’s Brazilian · Don’t fall for internet scams",
+  h:'Saw the viral <span class="hlr">“pink salt trick”</span>? It’s a scam. <span class="hlg">Here’s what actually quiets the 3pm cravings — and it’s real.</span>',
   img:"hero.webp",
   lede:'You’ve tried <b>everything</b> to lose the weight — the crazy crash diets, the detox teas, the “tricks,” even the <b>injections</b> — and the second you stop, the cravings come roaring back <b>louder than ever</b>. Here’s what no diet program or clinic will tell you: <b>it’s not willpower — it’s biology.</b> The one thing that sabotages your weight loss isn’t the food on your plan — it’s the <b>craving you can’t out-willpower</b>, which is why most diets fall apart by week 3. Whole <b>Amazon river communities</b> stay naturally satisfied on <b>açaí</b> — one of the most <b>filling foods on earth</b> (fiber + good fats, not the sugary $14 bowl). <b>Crave Off</b> backs it with Green Tea, Garcinia &amp; Gymnema — <b>no needles, no crash</b> — made to <b>support craving control and a balanced appetite,*</b> so the diet you’re <i>already doing</i> to lose weight finally has a shot. Answer a few quick questions and build your routine — and unlock the bonus guides.',
   note:"How it works: answer below in under 3 minutes. Each answer unlocks a free bonus guide that comes with your Crave Off and builds your plan at the end.",
@@ -309,11 +309,35 @@ function render(){
   if(s.k==="intro"){
     html+='<div class="eyebrow center">'+s.eyebrow+'</div>';
     html+='<h1 class="q center" style="margin-top:6px">'+p(s.h)+'</h1>';
+    html+='<div class="scamcall">🚩 <b>The “pink salt” trick. Baking soda in water. Gelatin “hacks.” $40 detox teas.</b> The viral craving “tricks” all over your feed are <b>lies</b> — none of them touch the craving. Before you fall for one, here’s the truth.</div>';
+    html+='<img class="scamdoc" src="doctor.webp" alt="A warning: the viral craving tricks aren’t backed by science" onerror="this.style.display=\'none\'">';
+    html+='<div class="scamdoc-cap">The “tricks” blowing up your feed? Not one of them is backed by real science.</div>';
+    html+='<div class="scambox">'+
+    '<div class="scamrow"><b>✗ The “pink salt” trick</b><p>The latest viral fad — a pinch of pink Himalayan salt in water. It’s salty water. It does nothing for a craving.</p></div>'+
+    '<div class="scamrow"><b>✗ The baking-soda-in-water “trick”</b><p>A social-media myth. It won’t touch a craving — at best it just upsets your stomach.</p></div>'+
+    '<div class="scamrow"><b>✗ The gelatin “appetite” hack</b><p>No real science behind it. The 3pm pull comes back anyway.</p></div>'+
+    '<div class="scamrow"><b>✗ $40 “detox” teas</b><p>A laxative and a sugar crash dressed up as a solution — not craving control.</p></div>'+
+    '<div class="scamrow"><b>✗ “Celebrity-endorsed” miracle drops</b><p>Scammers fake famous faces and “TV doctor” clips with AI to push these tricks. If a miracle hack needs a celebrity’s face to sell it — that’s the scam.</p></div>'+
+    '</div>';
+    html+='<div class="center" style="margin-top:24px"><div class="eyebrow">How the scam works</div><h1 class="q" style="font-size:21px;margin-top:4px">The fake-“news” playbook — spot it in 4 moves</h1></div>';
+    html+='<div class="scambox">'+
+    '<div class="scamrow"><b>1 · A fake “news” or TV-show page</b><p>They copy a famous morning-show or news layout so a scam looks like real journalism.</p></div>'+
+    '<div class="scamrow"><b>2 · Misused celebrity faces</b><p>AI-cloned voices and faces of stars and doctors who never endorsed anything.</p></div>'+
+    '<div class="scamrow"><b>3 · No real evidence</b><p>“Studies” and “investigators” that don’t exist, and claims no one can check.</p></div>'+
+    '<div class="scamrow"><b>4 · The bait-and-switch</b><p>The “recipe” is just bait — at the end they push some random no-name supplement.</p></div>'+
+    '</div>';
+    html+='<div class="center" style="margin-top:24px"><div class="eyebrow">Why Crave Off is different</div><h1 class="q" style="font-size:21px;margin-top:4px">No tricks. A real brand you can check.</h1></div>';
+    html+='<div class="scambox">'+
+    '<div class="scamwin"><b>✓ A real brand, out in the open</b><p>It’s Brazilian — a named brand with a real company and a real checkout. No fake news page, no cloned celebrities.</p></div>'+
+    '<div class="scamwin"><b>✓ Real ingredients, printed on the bottle</b><p>Amazonian açaí, Green Tea, Garcinia &amp; Gymnema — labeled, nothing hidden.</p></div>'+
+    '<div class="scamwin"><b>✓ Made in the USA · GMP facility</b><p>Produced to professional standards — not blended in someone’s garage.</p></div>'+
+    '<div class="scamwin"><b>✓ Honest claims + 60-day money-back</b><p>We say what it supports* — and nothing it doesn’t. If it’s not for you, full refund. The risk is on us. (Crave Off is a supplement, not a weight-loss drug.)</p></div>'+
+    '</div>';
+    html+='<div class="center" style="margin-top:26px"><div class="eyebrow">Now the good news</div><h1 class="q" style="font-size:22px;margin-top:4px">Here’s what actually works — and it starts in the Amazon</h1></div>';
     html+='<div class="bastrip"><figure><img src="ba1.webp" alt="Real customer — craving-control journey" onerror="this.parentNode.style.display=\'none\'"><div class="bf"><span>BEFORE</span><span>AFTER</span></div></figure><figure><img src="ba3.webp" alt="Real customer — craving-control journey" onerror="this.parentNode.style.display=\'none\'"><div class="bf"><span>BEFORE</span><span>AFTER</span></div></figure></div>';
     html+='<p class="bacap">Real women on their craving-control journey. Results vary — Crave Off supports craving control &amp; a balanced appetite;* it is not a weight-loss drug.</p>';
     html+='<img class="hero-img" src="'+s.img+'" alt="It’s Brazilian Crave Off — craving control botanical blend" onerror="this.style.display=\'none\'">';
     html+='<p class="lede center">'+p(s.lede)+'</p>';
-    html+='<div class="scamcall">🚩 <b>The “pink salt” trick. Baking soda in water. Gelatin “hacks.” $40 detox teas.</b> The viral craving “tricks” all over your feed are <b>lies</b> — none of them touch the craving. <b>What actually works comes from the Amazon, not a kitchen hack.</b></div>';
     html+='<div class="note">'+p(s.note)+'</div>';
     html+='<div class="authbar"><span>🚚 FREE SHIPPING</span><span>🇺🇸 MADE IN USA</span><span>🏭 GMP FACILITY</span><span>↩️ 60-DAY GUARANTEE</span></div>';
     scr.innerHTML=html; showCTA(s.cta+" →","🚚 FREE shipping · build your routine in 3 minutes",true); ctaBtn.onclick=next; return;
@@ -369,17 +393,6 @@ function render(){
     html+='<div class="center"><div class="eyebrow">🎉 Your routine is ready, '+(name||"there")+'</div>';
     html+='<h1 class="q" style="margin-top:6px">From this week, '+(name||"you")+', a simple daily habit to help you feel <span class="hlg">in control of cravings</span> — naturally, and backed by a 60-day money-back guarantee.</h1></div>';
     html+='<p class="lede center" style="font-size:15.5px">No crash diets. No cutting out everything you love. Just <b>2 capsules a day</b> of a premium botanical blend made to <b>support craving control, a balanced appetite and natural energy*</b> — so the healthier choice finally feels easier.</p>';
-    html+='<div class="center" style="margin-top:24px"><div class="eyebrow">Don’t get scammed</div><h1 class="q" style="font-size:22px;margin-top:4px">The viral “craving hacks” are lies</h1></div>';
-    html+='<img class="scamdoc" src="doctor.webp" alt="A warning: the viral craving tricks aren’t backed by science" onerror="this.style.display=\'none\'">';
-    html+='<div class="scamdoc-cap">The “tricks” blowing up your feed? Not one of them is backed by real science.</div>';
-    html+='<div class="scambox">'+
-    '<div class="scamrow"><b>✗ The “pink salt” trick</b><p>The latest viral fad — a pinch of pink Himalayan salt in water. It’s salty water. It does nothing for a craving.</p></div>'+
-    '<div class="scamrow"><b>✗ The baking-soda-in-water “trick”</b><p>A social-media myth. It won’t touch a craving — at best it just upsets your stomach.</p></div>'+
-    '<div class="scamrow"><b>✗ The gelatin “appetite” hack</b><p>No real science behind it. The 3pm pull comes back anyway.</p></div>'+
-    '<div class="scamrow"><b>✗ $40 “detox” teas</b><p>A laxative and a sugar crash dressed up as a solution — not craving control.</p></div>'+
-    '<div class="scamrow"><b>✗ “Celebrity-endorsed” miracle drops</b><p>Scammers now fake famous faces and “TV doctor” clips with AI to push these tricks. If a miracle hack needs a celebrity’s face to sell it — that’s the scam.</p></div>'+
-    '<div class="scamwin"><b>✓ What actually works comes from nature</b><p>Amazonian <b>açaí</b> — fiber &amp; good fats that whole river communities stay naturally satisfied on — built into <b>Crave Off</b> with Green Tea, Garcinia &amp; Gymnema to <b>support craving control &amp; a balanced appetite.*</b> No hacks, no gimmicks. (Crave Off is a supplement, not a weight-loss drug.)</p></div>'+
-    '</div>';
     html+='<div class="center" style="margin-top:22px"><div class="eyebrow">Why every diet fell apart</div><h1 class="q" style="font-size:22px;margin-top:4px">It was never your willpower</h1></div>';
     html+='<div style="margin-top:14px;display:flex;flex-direction:column;gap:8px">'+
      '<div style="background:#fff;border:1px solid #e3efd4;border-radius:12px;padding:12px 14px"><b style="color:#d62828;font-size:14.5px">✗ $12 drugstore “appetite” gummies</b><p style="font-size:13px;color:#45533a;margin-top:3px">A sugary buzz for an hour, then the crash — and the cravings come back louder than before.</p></div>'+
