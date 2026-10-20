@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- crave-off dtc v7 - before/after in first fold -->
+<!-- crave-off dtc v8 - scam-callout + dont-get-scammed block -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -48,6 +48,14 @@ h1.q{font-family:Montserrat;font-weight:800;font-size:27px;line-height:1.2;margi
 .bastrip img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
 .bastrip .bf{display:flex;justify-content:space-between;font-size:10px;font-weight:800;letter-spacing:.3px;color:var(--muted);margin-top:4px;padding:0 4px}
 .bacap{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;font-weight:600;line-height:1.4}
+.scamcall{background:#fff4e9;border:2px solid #ffc89a;border-left:6px solid #e8611f;border-radius:14px;padding:14px 16px;margin-top:16px;font-size:14.5px;color:#5a3a1a;line-height:1.5;text-align:left}
+.scambox{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.scamrow{background:#fff;border:1px solid #e3efd4;border-radius:12px;padding:12px 14px}
+.scamrow b{color:#d62828;font-size:14.5px}
+.scamrow p{font-size:13px;color:#45533a;margin-top:3px}
+.scamwin{background:#f3f9ea;border:2px solid #cfe6bd;border-radius:12px;padding:12px 14px}
+.scamwin b{color:#157347;font-size:14.5px}
+.scamwin p{font-size:13px;color:#2f5120;margin-top:3px}
 .ugc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
 .ugc figure{margin:0}
 .ugc img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;border:1px solid var(--line)}
@@ -202,6 +210,16 @@ h+='<p class="lede center">You’ve tried <b>everything</b> to lose the weight �
 h+='<div class="authbar"><span>🚚 FREE SHIPPING</span><span>🇺🇸 MADE IN USA</span><span>🏭 GMP FACILITY</span><span>↩️ 60-DAY GUARANTEE</span></div>';
 h+='<button class="inlinecta" data-buy="1">Get Crave Off → from $'+PRICE+'</button>';
 h+='<div class="cnote">🔒 Secure checkout · free US shipping · 60-day money-back guarantee</div>';
+h+='<div class="scamcall">🚩 <b>Baking soda in water. Gelatin “tricks.” $40 detox teas.</b> The viral craving “hacks” all over your feed are <b>lies</b> — none of them touch the craving. <b>What actually works comes from the Amazon, not a kitchen hack.</b></div>';
+
+/* ---- don't get scammed: fake viral tricks vs nature ---- */
+h+='<div class="center" style="margin-top:26px"><div class="eyebrow">Don’t get scammed</div><h1 class="q" style="font-size:22px;margin-top:4px">The viral “craving hacks” are lies</h1></div>';
+h+='<div class="scambox">'+
+  '<div class="scamrow"><b>✗ The baking-soda-in-water “trick”</b><p>A social-media myth. It won’t touch a craving — at best it just upsets your stomach.</p></div>'+
+  '<div class="scamrow"><b>✗ The gelatin “appetite” hack</b><p>No real science behind it. The 3pm pull comes back anyway.</p></div>'+
+  '<div class="scamrow"><b>✗ $40 “detox” teas</b><p>A laxative and a sugar crash dressed up as a solution — not craving control.</p></div>'+
+  '<div class="scamwin"><b>✓ What actually works comes from nature</b><p>Amazonian <b>açaí</b> — fiber &amp; good fats that whole river communities stay naturally satisfied on — built into <b>Crave Off</b> with Green Tea, Garcinia &amp; Gymnema to <b>support craving control &amp; a balanced appetite.*</b> No hacks, no gimmicks. (Crave Off is a supplement, not a weight-loss drug.)</p></div>'+
+  '</div>';
 
 /* ---- why a daily botanical beats try harder (tiles) ---- */
 h+='<div class="center" style="margin-top:26px"><div class="eyebrow">The reframe</div><h1 class="q" style="font-size:22px;margin-top:4px">Why the Amazon beats ‘just try harder’</h1></div>';
